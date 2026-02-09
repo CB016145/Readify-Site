@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Reading Flow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/book.jpg">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Readify</div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <ul id="menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explorer.html">Book Explorer</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="recommender.html">Recommender</a></li>
+            <li><a href="flow.html" class="active">Reading Flow</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section-padding">
+            <h1 style="text-align: center; margin-bottom: 1rem; color: var(--secondary);">Ambient Sounds</h1>
+            <p style="text-align: center; margin-bottom: 3rem; color: #666;">Set The Perfect Atomsphere For You.</p>
+            
+            <div class="flow-grid">
+                
+                <div class="flow-card" style="background: url('assets/images/rain.jpg') center/cover no-repeat;">
+                    <div class="flow-content">
+                        <h3>Rainy Day</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Gentle rainfall for deep focus.</p>
+                        <button onclick="toggleSound('rain')" id="btn-rain" class="flow-btn">Play</button>
+                    </div>
+                </div>
+
+                <div class="flow-card" style="background: url('assets/images/fire.jpg') center/cover no-repeat;">
+                    <div class="flow-content">
+                        <h3>Fireplace</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Cozy warmth on a cold night.</p>
+                        <button onclick="toggleSound('fire')" id="btn-fire" class="flow-btn">Play</button>
+                    </div>
+                </div>
+
+                <div class="flow-card" style="background: url('assets/images/cafe.jpg') center/cover no-repeat;">
+                    <div class="flow-content">
+                        <h3>Coffee Shop</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Soft background chatter.</p>
+                        <button onclick="toggleSound('cafe')" id="btn-cafe" class="flow-btn">Play</button>
+                    </div>
+                </div>
+
+                <div class="flow-card" style="background: url('assets/images/nature.jpg') center/cover no-repeat;">
+                    <div class="flow-content">
+                        <h3>Nature</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Forest birds and calm breeze.</p>
+                        <button onclick="toggleSound('nature')" id="btn-nature" class="flow-btn">Play</button>
+                    </div>
+                </div>
+
+                <div class="flow-card" style="background: url('assets/images/space.jpg') center/cover no-repeat;">
+                    <div class="flow-content">
+                        <h3>Space</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Deep ambient drone.</p>
+                        <button onclick="toggleSound('space')" id="btn-space" class="flow-btn">Play</button>
+                    </div>
+                </div>
+
+                <div class="flow-card" style="background: url('assets/images/wind.jpg') center/cover no-repeat;">
+                    <div class="flow-content">
+                        <h3>Wind</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Strong winds blowing.</p>
+                        <button onclick="toggleSound('wind')" id="btn-wind" class="flow-btn">Play</button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <audio id="audio-rain" loop src="assets/audio/rain.mp3"></audio>
+            <audio id="audio-fire" loop src="assets/audio/fire.mp3"></audio>
+            <audio id="audio-cafe" loop src="assets/audio/cafe.mp3"></audio>
+            
+            <audio id="audio-nature" loop src="assets/audio/nature.mp3"></audio>
+            <audio id="audio-space" loop src="assets/audio/space.mp3"></audio>
+            <audio id="audio-wind" loop src="assets/audio/wind.mp3"></audio>
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 Readify. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

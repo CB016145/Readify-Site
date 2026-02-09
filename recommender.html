@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Readify</div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <ul id="menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explorer.html">Book Explorer</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="recommender.html" class="active">Recommender</a></li>
+            <li><a href="flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section" style="min-height: 60vh;">
+            <div class="hero-content">
+                <h1>Can't Decide <br>What to <span class="highlight">Read?</span></h1>
+                <p style="margin-bottom: 20px;">Let fate decide your next adventure.</p>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>Preferred Genre:</label>
+                    <select id="recGenre" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd; margin-left: 10px;">
+                        <option value="all">Any Genre</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Philosophy">Philosophy</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Self-Help">Self-Help</option>
+                    </select>
+                </div>
+
+                <button onclick="recommendBook()" class="cta-button">Pick a Book for Me</button>
+            </div>
+            
+            <div class="hero-image" style="display: flex; justify-content: center; align-items: center;">
+                
+                <div id="recCard" class="author-card" style="display: none; width: 100%; max-width: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <h3 id="recTitle">Book Title</h3>
+                    <p id="recAuthor" style="color: #666; margin-bottom: 10px;">Author Name</p>
+                    <div id="recGenreTag" class="date-badge" style="display: inline-block; margin-bottom: 15px;">Genre</div>
+                    <p id="recDesc" style="font-style: italic; margin-bottom: 20px;">Description...</p>
+                    <button onclick="recommendBook()" style="background: none; border: none; color: var(--primary); cursor: pointer; text-decoration: underline; font-weight: bold;">Pick Again</button>
+                </div>
+                
+                <img id="recPlaceholder" src="assets/images/deciding.png" alt="Deciding what to read" 
+                     style="max-width: 100%; height: auto; display: block;">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 Readify.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

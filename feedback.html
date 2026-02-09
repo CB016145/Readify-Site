@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="logo">Readify</div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <ul id="menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explorer.html">Book Explorer</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="recommender.html">Recommender</a></li>
+            <li><a href="flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section-padding">
+            <h1 style="text-align: center; margin-bottom: 2rem;">Contact Us</h1>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                
+                <div class="author-card" style="text-align: left; margin-bottom: 2rem;">
+                    <form onsubmit="validateForm(event)">
+                        <div style="margin-bottom: 15px;">
+                            <label style="font-weight: bold;">Name:</label>
+                            <input type="text" id="name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-top: 5px;">
+                            <small id="errorName" style="color: var(--accent); display: none;">Name is required</small>
+                        </div>
+
+                        <div style="margin-bottom: 15px;">
+                            <label style="font-weight: bold;">Email:</label>
+                            <input type="text" id="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-top: 5px;">
+                            <small id="errorEmail" style="color: var(--accent); display: none;">Invalid Email</small>
+                        </div>
+
+                        <div style="margin-bottom: 15px;">
+                            <label style="font-weight: bold;">Message:</label>
+                            <textarea id="message" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-top: 5px; font-family: inherit;"></textarea>
+                            <small id="errorMsg" style="color: var(--accent); display: none;">Message cannot be empty</small>
+                        </div>
+
+                        <button type="submit" class="cta-button" style="width: 100%; border: none; cursor: pointer;">Send Feedback</button>
+                        <p id="successMessage" style="color: green; display: none; margin-top: 10px; text-align: center;">Feedback Sent Successfully!</p>
+                    </form>
+                </div>
+
+                <h3>Frequently Asked Questions</h3>
+                
+                <div class="author-card" style="text-align: left; margin-top: 1rem; padding: 1rem;">
+                    <div class="faq-item" style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px;">
+                        <button class="faq-btn" style="background: none; border: none; font-weight: bold; cursor: pointer; width: 100%; text-align: left;">
+                            + Is Readify free?
+                        </button>
+                        <div class="faq-panel" style="display: none; padding-top: 10px; color: #666;">
+                            Yes, Readify is a free tool for book lovers.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-btn" style="background: none; border: none; font-weight: bold; cursor: pointer; width: 100%; text-align: left;">
+                            + Does it work offline?
+                        </button>
+                        <div class="faq-panel" style="display: none; padding-top: 10px; color: #666;">
+                            Yes, once installed as a PWA, it works offline!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 Readify.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

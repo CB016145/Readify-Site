@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Book Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/book.jpg">
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="logo">Readify</div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <ul id="menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explorer.html" class="active">Book Explorer</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="recommender.html">Recommender</a></li>
+            <li><a href="flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section-padding">
+            <h1 style="text-align: center; margin-bottom: 2rem; color: var(--secondary);">Explore Our Library</h1>
+            
+            <div class="author-card" style="margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <input type="text" id="searchInput" placeholder="Search by title or author..." 
+                       style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; outline: none;">
+            </div>
+
+            <div id="book-grid" class="book-container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Readify Library</h3>
+                <p>Curated just for you.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recommender.html">Recommender</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Readify. All rights reserved.
+        </div>
+    </footer>
+
+
+</body>
+</html>
