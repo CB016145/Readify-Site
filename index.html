@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/book.jpg">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="text-decoration: none; color: white;">Readify</a>
+        
+        <button id="menuBtn" class="hamburger">☰</button>
+        <ul id="menu" class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="explorer.html">Book Explorer</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="recommender.html">Recommender</a></li>
+            <li><a href="flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+                <div class="hero-content">
+            <h1>Unlock Your Next <br><span class="highlight">Great Adventure</span></h1>
+            
+            <p style="margin-top: 15px; margin-bottom: 25px; color: #555; font-size: 1.1rem; line-height: 1.6;">
+                Reading isn't just a hobby; it's a journey. 
+                Whether you need motivation, escape, or knowledge, your perfect story is waiting.
+            </p>
+            
+            <blockquote id="quote-box" style="border-left: 4px solid var(--secondary); background: rgba(192, 133, 82, 0.1); padding: 15px; border-radius: 0 10px 10px 0; margin-bottom: 30px;">
+                <p id="quote" style="font-style: italic; color: var(--primary); font-weight: 500;">
+                    "I'd rather take coffee than compliments just now."
+                </p>
+                <cite id="quote-author" style="display: block; margin-top: 8px; font-weight: bold; color: var(--secondary);">
+                    - Louisa May Alcott (Little Women)
+                </cite>
+            </blockquote>
+            
+            <a href="explorer.html" class="cta-button">Start Your Journey</a>
+        </div>
+        
+        <div class="hero-image">
+            <img src="assets/images/title.jpg" alt="Reading" 
+                style="width: 100%; max-width: 650px; height: auto; border-radius: 20px; box-shadow: 0 15px 40px rgba(74, 59, 50, 0.2);">
+        </div>
+        </section>
+
+        <section class="section-padding" style="background-color: var(--background);">
+            
+            <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                <h2 style="font-size: 2rem; color: var(--primary);">Featured Books</h2>
+                <p style="color: #666;">Curated picks to start your journey.</p>
+            </div>
+
+            <div class="book-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; justify-content: center;">
+                
+                <div class="book-card" style="text-align: center; padding: 15px; background: var(--white); border-radius: 12px; box-shadow: var(--shadow);">
+                    <div class="book-image-box" style="height: 280px; margin-bottom: 15px; border-radius: 8px; overflow: hidden; background: #f4f4f4; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/rich-dad-poor-dad-1.jpg" alt="Rich Dad Poor Dad" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--primary);">Rich Dad Poor Dad</h3>
+                    <p style="color: #666; font-size: 0.9rem;">Robert T. Kiyosaki</p>
+                </div>
+
+                <div class="book-card" style="text-align: center; padding: 15px; background: var(--white); border-radius: 12px; box-shadow: var(--shadow);">
+                    <div class="book-image-box" style="height: 280px; margin-bottom: 15px; border-radius: 8px; overflow: hidden; background: #f4f4f4; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/atomic.jpg" alt="Atomic Habits" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--primary);">Atomic Habits</h3>
+                    <p style="color: #666; font-size: 0.9rem;">James Clear</p>
+                </div>
+
+                <div class="book-card" style="text-align: center; padding: 15px; background: var(--white); border-radius: 12px; box-shadow: var(--shadow);">
+                    <div class="book-image-box" style="height: 280px; margin-bottom: 15px; border-radius: 8px; overflow: hidden; background: #f4f4f4; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/alchemist.jpg" alt="The Alchemist" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--primary);">The Alchemist</h3>
+                    <p style="color: #666; font-size: 0.9rem;">Paulo Coelho</p>
+                </div>
+
+                <div class="book-card" style="text-align: center; padding: 15px; background: var(--white); border-radius: 12px; box-shadow: var(--shadow);">
+                    <div class="book-image-box" style="height: 280px; margin-bottom: 15px; border-radius: 8px; overflow: hidden; background: #f4f4f4; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/The-Psychology-of-Money-1.jpg" alt="Psychology of Money" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--primary);">Psychology of Money</h3>
+                    <p style="color: #666; font-size: 0.9rem;">Morgan Housel</p>
+                </div>
+
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="explorer.html" style="color: var(--secondary); text-decoration: none; font-weight: bold; font-size: 1.1rem;">View Full Library →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter-section">
+                <h3>Join Our Newsletter</h3>
+                <p>Get weekly book recommendations.</p>
+
+                <!-- FORM ADDED -->
+                <form id="newsletterForm" class="input-group">
+
+                    <input
+                        type="email"
+                        id="newsEmail"
+                        placeholder="Enter your email"
+                        required>
+
+                    <button type="submit" class="btn-secondary">
+                        Subscribe
+                    </button>
+
+                </form>
+
+                <!-- SUCCESS MESSAGE -->
+                <p id="newsletterMsg"
+                   style="display:none; color:#90EE90; margin-top:10px;">
+                </p>
+
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="explorer.html">Books</a></li>
+                    <li><a href="feedback.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 Readify. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
